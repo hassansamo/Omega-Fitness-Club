@@ -108,7 +108,11 @@ section {
   cursor: pointer;
 }
 .btn:hover {
-  background: linear-gradient(130deg, rgba(212, 48, 48, 0.76) 93%, transparent 90%);
+  background: linear-gradient(
+    130deg,
+    rgba(212, 48, 48, 0.76) 93%,
+    transparent 90%
+  );
   transform: scale(1.1);
 }
 
@@ -188,7 +192,7 @@ section {
   color: var(--text-col);
   padding: 1rem 0;
 }
-.slide .content h3 span{
+.slide .content h3 span {
   color: var(--sec-col);
   margin-top: 6rem;
   font-size: 5rem;
@@ -198,7 +202,7 @@ section {
   color: rgb(194, 191, 191);
   margin-top: 1rem;
   font-size: 15px;
-} 
+}
 .swiper-pagination-bullet {
   height: 2rem;
   width: 2rem;
@@ -252,25 +256,24 @@ section {
   padding: 1rem 0;
 }
 
-.trainers .box-container{
+.trainers .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
   gap: 1.5rem;
 }
-.trainers .box-container .box{
+.trainers .box-container .box {
   height: 40rem;
   overflow: hidden;
   position: relative;
 }
-.trainers .box-container .box:hover .content{
+.trainers .box-container .box:hover .content {
   transform: translateY(0);
 }
-.trainers .box-container .box img{
-  /* height: 100%; */
+.trainers .box-container .box img {
   width: 100%;
   object-fit: cover;
 }
-.trainers .box-container .box .content{
+.trainers .box-container .box .content {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -279,120 +282,120 @@ section {
   padding: 2rem;
   transform: translateY(6.5rem);
 }
-.trainers .box-container .box .content span{
+.trainers .box-container .box .content span {
   font-size: 1.5rem;
   color: var(--sec-col);
 }
-.trainers .box-container .box .content h3{
+.trainers .box-container .box .content h3 {
   font-size: 2rem;
   color: var(--text-col);
   padding-top: 0.5rem;
 }
-.trainers .box-container .box .content .share{
+.trainers .box-container .box .content .share {
   padding-top: 2rem;
   margin-top: 1.5rem;
   border-top: 0.1rem solid #aaa;
 }
-.trainers .box-container .box .content .share a{
+.trainers .box-container .box .content .share a {
   font-size: 2rem;
   color: var(--text-col);
   margin-right: 1.5rem;
 }
-.trainers .box-container .box .content .share a:hover{
+.trainers .box-container .box .content .share a:hover {
   color: var(--sec-col);
 }
 
-.pricing{
+.pricing {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
 }
-.pricing .information span{
+.pricing .information span {
   font-size: 2rem;
   color: var(--sec-col);
 }
-.pricing .information h3{
+.pricing .information h3 {
   font-size: 4rem;
   padding-top: 0.5rem;
   color: var(--text-col);
 }
-.pricing .information p{
+.pricing .information p {
   line-height: 2;
   padding: 1rem 0;
   font-size: 1.4rem;
   color: #aaa;
 }
-.pricing .information p i{
+.pricing .information p i {
   padding-right: 1rem;
   color: var(--sec-col);
 }
-.pricing .plan{
+.pricing .plan {
   text-align: center;
   padding: 2rem;
 }
-.basic{
+.basic {
   background: linear-gradient(130deg, #111 93%, transparent 90%);
 }
-.pricing .plan h3{ 
+.pricing .plan h3 {
   font-size: 2.5rem;
   margin: 1rem 0;
   color: var(--text-col);
 }
-.pricing .plan .price{ 
+.pricing .plan .price {
   font-size: 5rem;
-  font-weight: bolder;  
+  font-weight: bolder;
   color: var(--sec-col);
 }
-.pricing .plan .price span{ 
+.pricing .plan .price span {
   color: var(--text-col);
   font-size: 2rem;
 }
-.pricing .plan .list{
+.pricing .plan .list {
   padding: 1rem 0;
 }
-.pricing .plan .list p{
+.pricing .plan .list p {
   line-height: 2;
   padding: 1rem 0;
   font-size: 1.4rem;
   color: #aaa;
 }
-.pricing .plan .list p i{
+.pricing .plan .list p i {
   padding-right: 1rem;
   color: var(--sec-col);
 }
 
-.footer .box-container{
+.footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
 }
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
   font-size: 2.2rem;
   color: var(--text-col);
   padding: 1rem 0;
 }
-.footer .box-container .box .links{
+.footer .box-container .box .links {
   font-size: 1.5rem;
   display: block;
   color: var(--text-col);
   padding: 1rem 0;
 }
-.footer .box-container .box .links:hover{
+.footer .box-container .box .links:hover {
   color: var(--sec-col);
 }
-.footer .box-container .box p{
+.footer .box-container .box p {
   font-size: 1.5rem;
   color: #aaa;
   padding: 1rem 0;
 }
-.footer .box-container .box p i{
-  padding-right: .5rem;
+.footer .box-container .box p i {
+  padding-right: 0.5rem;
   color: var(--sec-col);
 }
-.footer .box-container .box .share{
+.footer .box-container .box .share {
   padding: 1rem 0;
 }
-.footer .box-container .box .share a{
+.footer .box-container .box .share a {
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.5rem;
@@ -400,14 +403,14 @@ section {
   color: var(--text-col);
   background: #111;
   border-radius: 50%;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   text-align: center;
 }
-.footer .box-container .box .share a:hover{
+.footer .box-container .box .share a:hover {
   background: var(--sec-col);
 }
 
-.credit{
+.credit {
   font-size: 2rem;
   text-align: center;
   padding: 2rem;
@@ -415,12 +418,12 @@ section {
   background: #111;
   line-height: 1.5;
 }
-.credit span{
+.credit span {
   color: var(--sec-col);
 }
 
 /* media queries */
-@media (max-width: 991px) {
+@media (max-width: 1172px) {
   html {
     font-size: 55%;
   }
@@ -441,7 +444,7 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   #menu-btn {
     display: inline-block;
   }
