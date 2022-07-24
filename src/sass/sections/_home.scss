@@ -1,0 +1,37 @@
+@use "../abstracts/" as a;
+
+body {
+  background: a.$clr-neutral-700;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  padding: a.rem(6) a.rem(10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: a.$clr-neutral-700;
+
+  .logo {
+    color: a.$clr-accent-700;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: a.rem(20);
+
+    span {
+      color: a.$clr-primary-700;
+    }
+
+    &::before {
+      content: url(../assets/img/icons/logo.svg);
+      display: block;
+      width: a.rem(90);
+      margin-inline: auto;
+      margin-bottom: a.rem(-15);
+    }
+  }
+}

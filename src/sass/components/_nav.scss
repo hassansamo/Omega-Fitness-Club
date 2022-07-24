@@ -1,0 +1,16 @@
+@use "../abstracts" as a;
+
+.navbar {
+  margin-inline: a.rem(16);
+
+  a {
+    padding-inline: a.rem(16);
+    font-size: a.rem(19);
+    color: a.$clr-accent-700;
+    text-decoration: none;
+
+    &:hover {
+      color: a.$clr-primary-700;
+    }
+  }
+}
