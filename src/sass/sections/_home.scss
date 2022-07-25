@@ -6,11 +6,9 @@ body {
 
 .header {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  inset: 0 0 auto 0;
   z-index: 1000;
-  padding: a.rem(6) a.rem(10);
+  padding: a.rem(10) 1%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,6 +19,8 @@ body {
     text-decoration: none;
     font-weight: bolder;
     font-size: a.rem(20);
+    // font-size: clamp(a.rem(16), a.rem(6.35) + 1vw, a.rem(40));
+    // font-size: (0.396875rem + 1vw);
 
     span {
       color: a.$clr-primary-700;

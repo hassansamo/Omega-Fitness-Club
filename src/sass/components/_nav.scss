@@ -1,16 +1,24 @@
 @use "../abstracts" as a;
 
-.navbar {
-  margin-inline: a.rem(16);
+nav {
+  li {
+    display: inline-block;
+    padding-inline: a.rem(20);
 
-  a {
-    padding-inline: a.rem(16);
-    font-size: a.rem(19);
-    color: a.$clr-accent-700;
-    text-decoration: none;
+    a {
+      // font-family: ;
+      font-weight: 500;
+      font-size: a.rem(16);
+      color: a.$clr-accent-700;
+      text-decoration: none;
+      padding: a.rem(9) a.rem(20);
+      background: a.$clr-primary-700;
+      border-radius: a.rem(50);
 
-    &:hover {
-      color: a.$clr-primary-700;
+      &:hover {
+        background: a.$clr-accent-700;
+        color: a.$clr-primary-700;
+      }
     }
   }
 }
