@@ -1,23 +1,79 @@
 @use "../abstracts" as a;
 
+// nav {
+//   li {
+//     display: inline-block;
+
+//     a {
+//       color: a.$clr-accent-700;
+//       padding: a.em(9) a.em(20);
+//       background: a.$clr-primary-700;
+//       // font-family: ;
+//       text-decoration: none;
+//       margin-inline: a.em(10);
+//       font-weight: bolder;
+//       font-size: a.rem(16);
+//       border-radius: a.rem(50);
+
+//       &:hover,
+//       &:focus {
+//         color: a.$clr-primary-700;
+//         background: a.$clr-accent-700;
+//         transition: background 300ms ease-out;
+//       }
+
+//       &:focus {
+//         box-shadow: 0 0 0 4px a.$clr-neutral-700, 0 0 0 7px a.$clr-accent-700;
+//         outline: none;
+//       }
+//     }
+//   }
+// }
+
 nav {
   li {
     display: inline-block;
-    padding-inline: a.rem(20);
 
     a {
-      // font-family: ;
-      font-weight: 500;
-      font-size: a.rem(16);
       color: a.$clr-accent-700;
-      text-decoration: none;
-      padding: a.rem(9) a.rem(20);
+      // border: 2px solid a.$clr-accent-700;
+      position: relative;
+      isolation: isolate;
+      padding: a.em(9) a.em(20);
+      background: 0;
       background: a.$clr-primary-700;
+      // font-family: ;
+      text-decoration: none;
+      transition: color 300ms linear;
+      margin-inline: a.em(10);
+      font-weight: bolder;
+      font-size: a.rem(16);
       border-radius: a.rem(50);
 
-      &:hover {
-        background: a.$clr-accent-700;
+      &:hover,
+      &:focus {
         color: a.$clr-primary-700;
+
+        &::after {
+          transform: scale(1, 1);
+        }
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 4px a.$clr-neutral-700, 0 0 0 7px a.$clr-accent-700;
+        outline: none;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: a.$clr-accent-700;
+        border-radius: a.rem(50);
+        transform-origin: left;
+        z-index: -1;
+        transform: scale(0, 1);
+        transition: transform 300ms ease;
       }
     }
   }
