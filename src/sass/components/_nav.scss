@@ -40,7 +40,6 @@ nav {
       position: relative;
       isolation: isolate;
       padding: a.em(9) a.em(20);
-      background: 0;
       background: a.$clr-primary-700;
       // font-family: ;
       text-decoration: none;
@@ -53,6 +52,11 @@ nav {
       &:hover,
       &:focus {
         color: a.$clr-primary-700;
+
+        &::selection {
+          color: a.$clr-neutral-700;
+          background: a.$clr-neutral-300;
+        }
 
         &::after {
           transform: scale(1, 1);

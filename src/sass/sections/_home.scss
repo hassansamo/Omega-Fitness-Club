@@ -1,35 +1,3 @@
-@use "../abstracts/" as a;
-
-body {
-  background: a.$clr-neutral-700;
-}
-
-.header {
-  position: fixed;
-  inset: 0 0 auto 0;
-  z-index: 1000;
-  padding: a.em(10) 1%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: a.$clr-neutral-700;
-
-  .logo {
-    color: a.$clr-accent-700;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: a.rem(20);
-
-    span {
-      color: a.$clr-primary-700;
-    }
-
-    &::before {
-      content: url(../assets/img/icons/logo.svg);
-      display: block;
-      width: a.rem(90);
-      margin-inline: auto;
-      margin-bottom: a.em(-8);
-    }
-  }
+.home {
+  color: white;
 }
