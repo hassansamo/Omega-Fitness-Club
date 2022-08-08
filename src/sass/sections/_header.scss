@@ -24,6 +24,7 @@ body {
     text-decoration: none;
     font-weight: bolder;
     font-size: a.rem(20);
+    transition: transform 400ms ease;
 
     span {
       color: a.$clr-primary-700;
@@ -32,6 +33,12 @@ body {
         color: a.$clr-accent-700;
         background: a.$clr-primary-700;
       }
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1, 1.1);
+      outline: 1px solid a.$clr-accent-700;
     }
 
     &::before {
