@@ -489,6 +489,7 @@ section {
       line-height: 2;
       color: $light-white;
       padding-block: 1rem;
+      text-transform: none;
     }
   }
 
@@ -503,6 +504,7 @@ section {
         font-size: 1.5rem;
         line-height: 2;
         color: $light-white;
+        text-transform: none;
       }
 
       .user {

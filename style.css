@@ -420,6 +420,7 @@ section {
   line-height: 2;
   color: #aaa;
   padding-block: 1rem;
+  text-transform: none;
 }
 .review .review-slider {
   flex: 1 1 60rem;
@@ -432,6 +433,7 @@ section {
   font-size: 1.5rem;
   line-height: 2;
   color: #aaa;
+  text-transform: none;
 }
 .review .review-slider .slide .user {
   display: flex;
